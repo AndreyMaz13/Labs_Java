@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.lab1m.ConverterController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Географический конвертер"/>
+
+    <Label text="Введите значение"/>
+
+    <TextField fx:id="inputField"
+               promptText="Введите данные"/>
+
+    <Label text="Из"/>
+
+    <ComboBox fx:id="fromBox"/>
+
+    <Label text="В"/>
+
+    <ComboBox fx:id="toBox"/>
+
+    <Button text="Конвертировать"
+            onAction="#handleConvert"/>
+
+    <Label text="Результат"/>
+
+    <Label fx:id="resultLabel"
+           text=""/>
+
+</VBox>
